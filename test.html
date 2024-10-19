@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu</title>
+<link rel="stylesheet" href="food.css">
+<style>
+    /* Style for the menu items */
+    .menu-item {
+        display: inline-block;
+        width: calc(33.33% - 20px); /* Adjust as needed */
+        margin: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        box-sizing: border-box;
+        vertical-align: top;
+    }
+
+    /* Style for the menu item names */
+    .menu-item-name {
+        font-family: cursive;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+    <div class="Shilpa">
+        <div id="app">
+            <div class="food">
+            <li class="chandani">RAJDHANI HUT!</li>
+            <div class="maggie">
+            <li>Home</li>
+            <li>Services</li>
+            <li>About</li>
+            
+            <li>Contact</li>
+            </div>
+    </div>
+               
+    
+           <div class="move-text"><h1> What's on your mind?</h1></div>
+            <div id="menu">
+                <!-- Display menu items here -->
+                   
+            </div>
+            <button onclick="goToCart()">Go to cart</button>
+            <button onclick="window.location.href='homepage.html'">Back to website</button>
+
+            <br>
+            <br>
+            <br>
+    
+            
+        </div>
+    </div>
+    </div>
+<div id="menu"></div>
+
+<script>
+    const menuItems = [
+    { id: 1, name: "Pizza", price: 300, image: "bg.jpg" },
+    { id: 2, name: "Noodles", price: 80, image: "bg1.jpg" },
+    { id: 3, name: "Fruit Salad", price: 40, image: "food.jpg" },
+    { id: 4, name: "Paneer Butter Masala", price: 100, image: "paneer.jpeg" },
+    { id: 5, name: "Naan Bread", price: 100, image: "naan.jpg" },
+    { id: 6, name: "Chicken Biryani", price: 80, image: "cb.jpg" },
+    { id: 7, name: "Italian Pasta", price: 40, image: "pasta.jpg" },
+    { id: 8, name: "Egg Curry", price: 100, image: "egg.jpg" },
+    { id: 9, name: "Burger", price: 80, image: "burger.jpg" },
+    { id: 10, name: "Cake", price: 80, image: "cake.jpeg" },
+    { id: 8, name: "Masala dosa", price: 100, image: "dosa.jpeg" },
+    { id: 9, name: "Samosa", price: 80, image: "samosa.jpeg" },
+    { id: 10, name: "Pasta", price: 80, image: "pasta.jpeg" },
+    { id: 9, name: "Momos", price: 80, image: "momos.jpeg" },
+    { id: 10, name: "French Fries", price: 80, image: "frenchfries.jpg" },
+];
+
+
+    const menuContainer = document.getElementById("menu");
+    let rowContainer; // Container for each row
+    menuItems.forEach((item, index) => {
+        if (index % 3 === 0) {
+            // Create a new row container for every third item
+            rowContainer = document.createElement("div");
+            rowContainer.className = "row";
+            menuContainer.appendChild(rowContainer);
+        }
+
+        const menuItem = document.createElement("div");
+        menuItem.className = "menu-item";
+        menuItem.innerHTML = `
+            <img src="${item.image}" alt="${item.name}" width="100%">
+            <p class="menu-item-name">${item.name}</p>
+            <p>Rs.${item.price}</p>`;
+
+        // Apply styles to menu item names
+        const menuItemName = menuItem.querySelector('.menu-item-name');
+        menuItemName.style.fontFamily = 'cursive';
+        menuItemName.style.fontWeight = 'bold';
+
+        menuItem.addEventListener("click", () => addToCart(item));
+        rowContainer.appendChild(menuItem);
+    });
+
+    // Cart
+    let cart = [];
+
+    // Add item to cart
+    function addToCart(item) {
+        cart.push(item);
+        alert(`${item.name} added to cart!`);
+    }
+
+    // Function to redirect to cart page and pass selected items
+    function goToCart() {
+        if (cart.length === 0) {
+            alert("Your cart is empty. Please add items before going to the cart.");
+        } else {
+            localStorage.setItem('cartItems', JSON.stringify(cart));
+            window.location.href = 'cart.html';
+        }
+    }
+</script>
+
+</body>
+</html>

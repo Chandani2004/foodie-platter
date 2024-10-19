@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1d3f5;     
+    background-image: url("hotel3.jpeg");      
+
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c04141;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #6d3454;
+    
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    border: 1px solid #f291f9;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.item-details {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.item-image {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+   
+

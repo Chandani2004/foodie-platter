@@ -1,0 +1,207 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("hotel3.jpeg");      
+}
+
+.Shilpa {
+    height: 150%;
+}
+
+#app {
+    max-width: 1200px;
+    height: 2000px;
+    margin-top: 70px;
+    margin: 20px auto;
+    padding: 20px;
+    background-image: url('bg7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+
+h4 {
+    text-align: center;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+.maggie {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: bold;
+    transition: color 0.3s ease;
+}
+
+.maggie:hover {
+    color: #446be0;
+}
+
+.chandani {
+    font-size: 80px;
+}
+
+.move-text {
+    animation: moveLinearly 8s linear infinite;
+}
+
+@keyframes moveLinearly {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(700px); /* Adjust the distance as needed */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.menu-item {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: dark blue; /* Text color for menu items */
+    border: 4px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-item img {
+    max-height: 150px; /* Set a maximum height for the images */
+    margin-bottom: 20px; /* Add some spacing below the image */
+}
+
+.menu-item:hover {
+    background-color: #9a51df;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 30px 30px;
+    font-size: 26px;
+    background-color: #4caf50;
+    border-radius: 20px 30px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-block: 80px;
+}
+
+.form {
+    background-image: url(./images/contact.jpg);
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

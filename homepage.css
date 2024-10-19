@@ -1,0 +1,125 @@
+/* Add your styling here */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b), url('bg6.jpg');
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('bg6.jpg');
+    background-size: cover;
+    color: #72f044;
+    text-align: center;
+    padding: 100px 20px;
+}
+    
+
+
+.hotel-image {
+    margin-right: 20px;
+    gap: 40px; 
+    
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#discover, #order, #about, #contact {
+    padding: 50px 20px;
+    
+}
+
+.restaurant-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+}
+.container {
+    position: relative;
+    display: inline-block;
+}
+.Click {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3c031f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.hotel-image {
+    margin-bottom: 20px; /* Adjust as needed */
+}
+.gap {
+    background-image: url('bg6.jpg');
+    background-size: cover;
+    color: #72f044;
+    text-align: center;
+    padding: 100px 20px;
+}
+.search-bar {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

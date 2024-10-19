@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!---Coding By CodingLab | www.codinglabweb.com--->
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<!--<title>Registration Form in HTML CSS</title>-->
+<!---Custom CSS File--->
+<link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+<section class="container">
+<header>Register your Restaurant</header>
+<form action="connect.php" method="post" class="form">
+    <div class="input-box">
+        <label>Restaurant Name</label>
+        <input type="text" placeholder="Restaurant name" name="restaurant_name" required />
+    </div>
+    <div class="input-box">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter email address" name="email" required />
+    </div>
+    <div class="column">
+        <div class="input-box">
+            <label>Contact details</label>
+            <input type="text" placeholder="Enter phone number" name="contact_number" required />
+        </div>
+        <div class="input-box">
+            <label>FSSAI license no.</label>
+            <input type="text" placeholder="FSSAI NO." name="fssai_license_no" required />
+        </div>
+    </div>
+    <div class="input-box address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter street address" name="address_line1" required />
+        <input type="text" placeholder="Enter street address line 2" name="address_line2" required />
+        <div class="column">
+            <div class="select-box">
+                <select name="country">
+                    <option hidden>Country</option>
+                    <option>America</option>
+                    <option>Japan</option>
+                    <option>India</option>
+                    <option>Nepal</option>
+                </select>
+            </div>
+            <input type="text" placeholder="Enter your city" name="city" required />
+        </div>
+        <div class="column">
+            <input type="text" placeholder="Enter your region" name="region" required />
+            <input type="number" placeholder="Enter postal code" name="postal_code" required />
+        </div>
+    </div>
+    <button type="submit">Submit</button>
+    <button onclick="window.location.href='homepage.html'" type="button">Back to website</button>
+</form>
+</section>
+</body>
+</html>
